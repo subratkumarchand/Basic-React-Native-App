@@ -56,15 +56,11 @@ export default class UserLogin extends React.Component {
             .then(function(data) {
                 //alert(data);
                // console.log(JSON.stringify(data));
-           //alert(JSON.stringify(data));
             let email = data.find(x =>x.Email == emailId);
             let userName = data.find(x => x.Password == password);
             //console.log(email + userName);
              if(email && userName){
-                  //  ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ok');", true);
-         // Response.Redirect("login");
-        alert('ok');
-        
+				alert('ok');
                      //   this.props.navigation.navigation('Categories')
             }else {
                  alert('please enter correct details');
